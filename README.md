@@ -1,16 +1,24 @@
-# stok_sayim
+# Stok Sayım — Mobile
 
-A new Flutter project.
+Flutter client for [stok-sayim-api](https://github.com/furkanmar/stok-sayim-api): barcode-based stock counting and store management for multi-branch retail.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Camera barcode scanning (`mobile_scanner`)
+- Stock counts per branch
+- Product catalog, bulk import from a SQLite file
+- Reports and CSV export
+- User and branch management, role-based login
 
-A few resources to get you started if this is your first Flutter project:
+## Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter · Provider · Dio
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Running
+
+```bash
+flutter pub get
+flutter run
+```
+
+Set the API address in the app's settings screen.
